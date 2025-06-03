@@ -20,6 +20,7 @@ import _ from "lodash";
 export default async function (el) {
     /* Passthrough Copy */
     el.addPassthroughCopy("fonts");
+    el.addPassthroughCopy("CNAME");
     el.setDataDeepMerge(true);
 
     /* SEO */
