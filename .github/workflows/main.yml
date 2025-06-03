@@ -1,0 +1,37 @@
+name: Build and Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '22'
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Run Docker container
+      run: docker run -d -p 8888:8888 ghcr.io/validator/validator:latest
+
+    - name: Build the site
+      run: npm run build
+
+    - name: Stop Docker container
+      run: docker stop $(docker ps -q --filter ancestor=ghcr.io/validator/validator:latest)
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
