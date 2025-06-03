@@ -1,0 +1,82 @@
+---
+layout: main.njk
+---
+
+<div itemscope itemtype="http://schema.org/Person">
+<!-- Metadata -->
+<meta itemprop="givenName" content="Maxim" />
+<meta itemprop="familyName" content="Van de Wynckel" />
+<meta itemprop="sameAs" content="https://solid.maximvdw.be/profile/card#me" />
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+  <meta itemprop="streetAddress" content="Invalidenlaan 178" />
+  <meta itemprop="addressLocality" content="Oudergem" />
+  <meta itemprop="addressRegion" content="Brussels-capital region" />
+  <meta itemprop="postalCode" content="1160" />
+  <meta itemprop="addressCountry" content="BE" />
+</div>
+<meta itemprop="email" content="me@maximvdw.be" />
+<meta itemprop="jobTitle" content="researcher" />
+<meta itemprop="knowsAbout" content="interoperability" />
+<meta itemprop="knowsAbout" content="indoor positioning" />
+<meta itemprop="knowsAbout" content="hybrid positioning systems" />
+<meta itemprop="knowsAbout" content="location-based services" />
+<meta itemprop="knowsAbout" content="linked data" />
+<meta itemprop="knowsAbout" content="semantic web" />
+<meta itemprop="knowsAbout" content="personal data vaults" />
+<!-- END Metadata -->
+
+<div class="row">
+  <div class="col-sm-3">
+    <img
+      src="{{ profile_image }}"
+      alt="Maxim Van de Wynckel"
+      class="img-fluid rounded-circle"
+      itemprop="image"
+    />
+  </div>
+  <div class="col-sm-9">
+    <h1>About me</h1>
+    <span itemprop="description">
+    {{ content | safe }}
+    </span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-9">
+    <div class="social-links">
+      <a
+        class="social-link linkedin"
+        rel="me"
+        href="{{ social.linkedin }}"
+        itemprop="sameAs"
+      >
+        <i class="fa fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        class="social-link mastodon"
+        rel="me"
+        href="{{ social.mastodon }}"
+        itemprop="sameAs"
+      >
+        <i class="fa fa-brands fa-mastodon"></i>
+      </a>
+      <a
+        class="social-link bluesky"
+        rel="me"
+        href="{{ social.bluesky }}"
+        itemprop="sameAs"
+      >
+        <i class="fa fa-brands fa-bluesky"></i>
+      </a>
+      <a
+        class="social-link github"
+        rel="me"
+        href="{{ social.github }}"
+        itemprop="sameAs"
+      >
+        <i class="fa fa-brands fa-github"></i>
+      </a>
+    </div>
+  </div>
+</div>

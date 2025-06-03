@@ -1,0 +1,28 @@
+// Margin x-axis classes
+@for $i from 0 through 6 {
+    .mx-#{$i} {
+        margin-left: $i * 0.25rem;
+        margin-right: $i * 0.25rem;
+    }
+}
+
+// Margin y-axis classes
+@for $i from 0 through 6 {
+    .my-#{$i} {
+        margin-top: $i * 0.25rem;
+        margin-bottom: $i * 0.25rem;
+    }
+}
+
+@for $i from 0 through 6 {
+    .mt-#{$i} {
+        margin-top: $i * 0.25rem;
+    }
+}
+
+@for $i from 0 through 6 {
+    .mb-#{$i} {
+        margin-bottom: $i * 0.25rem;
+    }
+}
+

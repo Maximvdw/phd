@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@use "includes/variables";
+@use "includes/normalize";
+@use "includes/grid";
+@use "includes/typography";
+@use "includes/media";
+@use "includes/margin";
+
+@use "components/footer";
+@use "components/navigation";
+@use "components/posts";
+@use "components/button";
+@use "components/filter";
+@use "components/social";
+@use "components/blockquote";
+
+// Either import the header or the sidebar, not both
+@use "components/header";
+// @use "components/sidebar";
+
+.main {
+    overflow-x: auto;
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic Std Book";
+    src: url("/fonts/ITC Avant Garde Gothic Std Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ITC Avant Garde Gothic Bold Condensed";
+    src: url("/fonts/ITC Avant Garde Gothic Bold Condensed.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    font-family: "ITC Avant Garde Gothic Std Book", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "ITC Avant Garde Gothic Bold Condensed", sans-serif;
+}
+
+#content {
+    flex: 1 auto;
+}
+
+@media (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+}

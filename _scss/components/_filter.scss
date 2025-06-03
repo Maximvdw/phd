@@ -1,0 +1,38 @@
+@use "../includes/variables" as *;
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.filter .form-group {
+  margin-bottom: 15px;
+}
+.filter .form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.filter .btn {
+  width: 100%;
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.filter .btn:hover {
+  background-color: #0056b3;
+}

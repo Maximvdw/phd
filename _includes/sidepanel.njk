@@ -1,0 +1,59 @@
+<aside class="sidebar">
+    <div class="profile">
+        <a href="/"><img src="/images/profile/maxim2.jpg" alt="Maxim Van de Wynckel"></a>
+        <div class="firstname">Maxim</div>
+        <div class="lastname">Van de Wynckel</div>
+        <div class="bio">Researcher, consultant, software engineer</div>
+    </div>
+    <ul class="menu">
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% for entry in navPages %}
+        <li><a {% if entry.url == page.url %}class="active"{% endif %} href="{{ entry.url }}">{{ entry.title }}</a></li>
+        {% endfor %}
+    </ul>
+</aside>
+<div class="hamburger" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<script>
+    function isOpen() {
+        return document.querySelector('aside.sidebar').classList.contains('open');
+    }
+
+    function toggleSidebar() {
+        document.querySelector('aside.sidebar').classList.toggle('open');
+        document.querySelector('.content').classList.toggle('shifted');
+        document.querySelector('footer').classList.toggle('shifted');
+        document.querySelector('.hamburger').classList.toggle('active');
+    }
+
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    function handleGesture() {
+        const threshold = 100; // Minimum swipe distance in pixels
+        if (touchendX < touchstartX - threshold) {
+            // Swiped left
+            if (isOpen()) {
+                toggleSidebar();
+            }
+        }
+        if (touchendX > touchstartX + threshold) {
+            // Swiped right
+            if (!isOpen()) {
+                toggleSidebar();
+            }
+        }
+    }
+
+    document.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+    }, false);
+
+    document.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    }, false);
+</script>

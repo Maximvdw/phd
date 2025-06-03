@@ -1,0 +1,131 @@
+@use "variables" as *;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $background-color;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+}
+
+body p {
+  text-align: justify;
+}
+
+.typography blockquote {
+    font-style: italic;
+}
+
+.typography h1 {
+    position: relative;
+    left: -3px;
+    font-weight: 400;
+    font-size: 2em;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.typography h2 {
+    position: relative;
+    left: -2px;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: $secondary-color;
+    margin: 1em 0 0.5em 0;
+}
+
+.typography h3 {
+    position: relative;
+    left: -2px;
+    font-weight: 300;
+    font-size: 1.17em;
+    color: $secondary-color;
+    margin: 1em 0 0.5em 0;
+}
+
+.typography p {
+    line-height: 1.5em;
+    margin: 1em 0;
+}
+
+.typography a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.typography a:hover {
+    text-decoration: underline;
+}
+
+.typography dl.specs {
+    line-height: 1.5em;
+    margin: 1em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.typography dl.specs dt {
+    float: left;
+    width: 100px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.typography dl.specs dd {
+    margin-left: 100px;
+    padding: 10px 0 10px 10px;
+    border-top: 1px solid #eee;
+}
+
+.typography code,
+.typography pre {
+    font-family: "Cascadia Mono-SemiLight",Menlo,Monaco,Consolas,monospace;
+    padding: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    white-space: pre-wrap;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.typography pre {
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.typography pre code {
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+    text-align: left;
+}
+
+.typography img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.abstract {
+    font-style: italic;
+}
+
+@media screen and (max-width: $on-medium) {
+    .typography h1 {
+        font-size: 1.8em;
+    }
+    
+    .typography h2 {
+        font-size: 1.3em;
+    }
+    
+    .typography h3 {
+        font-size: 1.10em;
+    }    
+}

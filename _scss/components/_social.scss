@@ -1,0 +1,63 @@
+@use "sass:color";
+
+// Define color variables
+$social-colors: (
+    mastodon: #6364ff,
+    linkedin: #0a66c2,
+    x: #000,
+    twitter: #000,
+    github: #000,
+    scholar: #4285f4,
+    orcid: #a6ce39,
+    researchgate: #00d0bb,
+    academia: #fff,
+    acm: #0079a9,
+    dblp: #edba25,
+    youtube: #ff0000,
+    bluesky: rgb(0, 133, 255),
+);
+
+// Mixin for hover effect
+@mixin hover-effect($color) {
+    &:hover {
+        background-color: color.scale($color, $lightness: 10%);
+        border-color: color.scale($color, $lightness: 10%);
+    }
+}
+
+a.social-link {
+    transition: width, font-size 0.2s;
+    text-decoration: none;
+    border: 1px solid white;
+    width: 1.5em;
+    line-height: 1.5em;
+    border-radius: 0.2em;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.6em;
+
+    i {
+        width: 100%;
+        height: 100%;
+        font-style: normal;
+    }
+
+    // Apply colors and hover effects
+    @each $name, $color in $social-colors {
+        &.#{$name} {
+            background-color: $color;
+            border: 1px solid $color;
+            color: if($name == academia, black, white);
+            @include hover-effect($color);
+        }
+    }
+}
+
+a.social-link.academia {
+    border: 1px solid black;
+    color: black;
+    &:hover {
+        background-color: color.scale(#fff, $lightness: 10%);
+        border-color: color.scale(black, $lightness: 10%);
+    }
+}

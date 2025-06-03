@@ -1,0 +1,81 @@
+{
+    "bluesky": {
+        "displayname": "@maximvdw.be",
+        "url": "https://bsky.app/profile/maximvdw.be",
+        "name": "Bluesky",
+        "icon": {
+            "class": "fab fa-bluesky"
+        }
+    },
+    "orcid": {
+        "url": "https://orcid.org/0000-0003-0314-7107",
+        "displayname": "0000-0003-0314-7107",
+        "name": "ORCID",
+        "icon": {
+            "class": "ai ai-orcid"
+        }
+    },
+    "linkedin": {
+        "url": "https://linkedin.com/in/maximvdw",
+        "displayname": "/in/maximvdw",
+        "name": "LinkedIn",
+        "icon": {
+            "class": "fab fa-linkedin"
+        }
+    },
+    "scholar": {
+        "url": "https://scholar.google.com/citations?user=NB6760YAAAAJ",
+        "name": "Google Scholar",
+        "icon": {
+            "class": "ai ai-google-scholar"
+        }
+    },
+    "github": {
+        "url": "https://github.com/Maximvdw",
+        "displayname": "github.com/Maximvdw",
+        "name": "GitHub",
+        "icon": {
+            "class": "fab fa-github"
+        }
+    },
+    "mastodon": {
+        "url": "https://mas.to/@maximvdw",
+        "displayname": "mas.to@maximvdw",
+        "name": "Mastodon",
+        "icon": {
+            "class": "fab fa-mastodon"
+        }
+    },
+    "researchgate": {
+        "url": "https://www.researchgate.net/profile/Maxim-Van-de-Wynckel",
+        "name": "ResearchGate",
+        "icon": {
+            "class": "ai ai-researchgate"
+        },
+        "visible": false
+    },
+    "academia": {
+        "url": "https://vub.academia.edu/MaximVandeWynckel",
+        "name": "Academia",
+        "icon": {
+            "class": "ai ai-academia"
+        },
+        "visible": false
+    },
+    "acm": {
+        "url": "https://dl.acm.org/profile/99660619976",
+        "name": "ACM",
+        "icon": {
+            "class": "ai ai-acm"
+        },
+        "visible": false
+    },
+    "dblp": {
+        "url": "https://dblp.org/pid/283/5794.html",
+        "name": "DBLP",
+        "icon": {
+            "class": "ai ai-dblp"
+        },
+        "visible": false
+    }
+}

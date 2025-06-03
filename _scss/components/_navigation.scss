@@ -1,0 +1,50 @@
+.navigation {
+    padding: 0px 10px 0 0;
+    text-align: left;
+    margin-top: -0.5em;
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation a {
+    display: block;
+    padding: 2px 0;
+    text-decoration: none;
+    font-size: 0.95em;
+    color: var(--color-text);
+    transition: opacity 0.2s;
+}
+.navigation a.current {
+    color: #9600ff;
+    font-weight: bold;
+}
+.navigation a:hover {
+    opacity: 0.75;
+}
+.navigation h3 {
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
+}
+.toc {
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .col-sm-3>:last-child {
+        margin-bottom: 2em;
+    }
+    .col-sm-2>:last-child {
+        margin-bottom: 2em;
+    }
+}
+
+li.title {
+    position: relative;
+    left: -2px;
+    font-weight: bolder;
+    font-size: 1.17em;
+    color: #660000;
+    margin: 1em 0 0.5em 0;
+}

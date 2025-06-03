@@ -1,0 +1,13 @@
+{
+    "title": "Interoperable and Discoverable Indoor Positioning Systems",
+    "url": "https://phd.maximvdw.be",
+    "description": "PhD dissertation - Maxim Van de Wynckel on Interoperable and Discoverable Indoor Positioning Systems",
+    "author": "Maxim Van de Wynckel",
+    "options": {
+      "titleDivider": "|",
+      "imageWithBaseUrl": true,
+      "twitterCardType": "summary_large_image"
+    },
+    "image": "/images/social/summary-large.png",
+    "reply_to": "me@maximvdw.be"
+}

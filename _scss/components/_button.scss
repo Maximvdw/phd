@@ -1,0 +1,82 @@
+@use "../includes/variables" as *;
+
+.typography {
+    .btn {
+        max-width: 220px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .btn-header {
+        margin-bottom: 30px;
+    }
+    
+    .btn i {
+        margin-right: 8px;
+    }
+
+    .btn-icon i {
+        margin-left: 4px;
+        margin-right: 4px; 
+    }
+    
+    .btn-outline-primary {
+        box-shadow:inset 0px 0px 0px 1px $primary-color;
+        color: $primary-color;
+    }
+    .btn-outline-primary:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    .btn-red {
+        background-color: #9c0000;
+        color: white;
+    }
+    .btn-red:hover {
+        background-color: #c20404;
+    }
+
+    .btn-green {
+        background-color: #009c08;
+        color: white;
+    }
+    .btn-green:hover {
+        background-color: #04c20e;
+    }
+
+    .btn-blue {
+        background-color: #00569c;
+        color: white;
+    }
+    .btn-blue:hover {
+        background-color: #044dc2;
+    }
+
+    .btn-yellow {
+        background-color: #c5da08;
+        color: black;
+    }
+    .btn-yellow:hover {
+        background-color: #c2bf04;
+    }
+
+    .btn-grey {
+        background-color: #2e2e2e;
+        color: white;
+    }
+    .btn-grey:hover {
+        background-color: #393939;
+    }
+    .btn-purple {
+        background-color: #6b2e9c;
+        color: white;
+    }
+    .btn-purple:hover {
+        background-color: #7a3ac2;
+    }
+}

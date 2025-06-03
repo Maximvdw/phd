@@ -1,0 +1,26 @@
+.styled-blockquote {
+    position: relative;
+    padding: 1em 1.5em;
+    margin: 0;
+    font-style: italic;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+  }
+  .styled-blockquote:before,
+  .styled-blockquote:after {
+    font-size: 4em;
+    position: absolute;
+    color: #ccc;
+  }
+  .styled-blockquote:before {
+    top: -0.5em;
+    left: -0.8em;
+  }
+  .styled-blockquote:after {
+    bottom: -0.5em;
+    right: -0.5em;
+  }
+
+  .styled-blockquote .name.me {
+    font-weight: bold;
+  }

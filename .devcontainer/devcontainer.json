@@ -1,0 +1,24 @@
+{
+    "name": "phd.maximvdw.be",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-14",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "22"
+        },
+        "ghcr.io/devcontainers/features/git-lfs:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "syler.sass-indented",
+                "guapibai.nunjucks-prettier",
+                "jock.svg"
+            ]
+        }
+    },
+    "postCreateCommand": "yarn install",
+    "forwardPorts": [8080],
+    "remoteUser": "node"
+}
