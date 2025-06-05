@@ -62,6 +62,19 @@ export default async function (el) {
         ul: true
     });
 
+    // Collect all aliases from frontmatter
+    el.addCollection("frontmatterAliases", function (collectionApi) {
+        const nodes = collectionApi.getFilteredByGlob("./**/*.md");
+        let frontmatterAliases = [];
+
+        nodes.forEach(node => 
+        (node.data.aliases || []).forEach(alias =>
+            frontmatterAliases.push([node.data.page.url,`${alias}`])
+        )
+        );
+        return frontmatterAliases;
+    });
+
     /* Stylesheets */
     el.addPlugin(pluginSASS, [
         {

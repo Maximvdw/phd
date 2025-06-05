@@ -15,8 +15,16 @@ Deze thesis onderzoekt hoe de *interoperabiliteit* van indoor en outdoor positio
 
 Een belangrijk aspect van de voorgestelde oplossing is de nadruk op gebruikerscontrole. Door privacybewuste gegevensbeheer te ondersteunen en de afhankelijkheid van gesloten, leveranciersspecifieke applicaties te verminderen, streeft het kader naar een meer open en gebruikersgericht alternatief. Het uiteindelijke doel van dit onderzoek is het ondersteunen van de ontwikkeling van een verenigd ecosysteem voor positioneringssystemen, waarin locatiegegevens efficiënt kunnen worden beheerd en gedeeld in verschillende contexten, terwijl vertrouwen en interoperabiliteit behouden blijven.
 
+# Juryleden
+- [Prof. em. Dr. Olga De Troyer, Vrije Universiteit Brussel (Voorzitter)](https://wise.vub.ac.be/member/olga-de-troyer)
+- [Prof. Dr. Elisa Gonzalez Boix, Vrije Universiteit Brussel (Secretaris)](https://soft.vub.ac.be/disco/elisa/)
+- [Prof. Dr. Beat Signer, Vrije Universiteit Brussel (Promotor)](https://beatsigner.com/)
+- [Prof. Dr. Bart Jansen, Vrije Universiteit Brussel](https://www.etrovub.be/people/member/about-bio/bjansen/)
+- [Prof. Dr. Pieter Colpaert, UGent](https://pietercolpaert.be/)
+- [Prof. Dr. Kris Luyten, UHasselt](https://www.uhasselt.be/nl/wie-is-wie/kris-luyten)
+
 # Relevante Publicaties
-- (*Under Review*) Maxim Van de Wyncke and Beat Signer. OpenHPS: A Modular Framework to Facilitate the Development of FAIR Positioning Systems. Journal of Open Source Software, June 2025. doi: 10.21105.joss.08113
+- (*Under Review*) Maxim Van de Wynckel and Beat Signer. OpenHPS: A Modular Framework to Facilitate the Development of FAIR Positioning Systems. Journal of Open Source Software, June 2025. doi: 10.21105.joss.08113
 - Maxim Van de Wynckel and Beat Signer. OpenHPS: An Open Source Hybrid Positioning System. Technical Report WISE-2020-01, Vrije Universiteit Brussel, 2020. doi: 10.48550/ARXIV.2101.05198
 - Maxim Van de Wynckel and Beat Signer. Indoor Positioning Using the OpenHPS Framework. In Proceedings of the 11th International Conference on Indoor Positioning and Indoor Navigation (IPIN 2021), 2021. doi: 10.1109/IPIN51156.
 2021.9662569

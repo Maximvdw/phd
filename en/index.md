@@ -16,8 +16,16 @@ This dissertation investigates how to improve the interoperability of indoor and
 
 An important aspect of the proposed solution is the emphasis on user control. By supporting privacy-aware data management and reducing reliance on closed, vendor-specific applications, the framework aims to offer a more open and user-centric alternative. The ultimate goal of this research is to support the development of a unified ecosystem for positioning systems, where location data can be managed and shared efficiently across various contexts while preserving trust and interoperability.
 
+# Members of the Jury
+- [Prof. em. Dr. Olga De Troyer, Vrije Universiteit Brussel (Chair)](https://wise.vub.ac.be/member/olga-de-troyer)
+- [Prof. Dr. Elisa Gonzalez Boix, Vrije Universiteit Brussel (Secretary)](https://soft.vub.ac.be/disco/elisa/)
+- [Prof. Dr. Beat Signer, Vrije Universiteit Brussel (Supervisor/Promoter)](https://beatsigner.com/)
+- [Prof. Dr. Bart Jansen, Vrije Universiteit Brussel](https://www.etrovub.be/people/member/about-bio/bjansen/)
+- [Prof. Dr. Pieter Colpaert, Ghent University](https://pietercolpaert.be/)
+- [Prof. Dr. Kris Luyten, Hasselt University](https://www.uhasselt.be/nl/wie-is-wie/kris-luyten)
+
 # Relevant Publications
-- (*Under Review*) Maxim Van de Wyncke and Beat Signer. OpenHPS: A Modular Framework to Facilitate the Development of FAIR Positioning Systems. Journal of Open Source Software, June 2025. doi: 10.21105.joss.08113
+- (*Under Review*) Maxim Van de Wynckel and Beat Signer. OpenHPS: A Modular Framework to Facilitate the Development of FAIR Positioning Systems. Journal of Open Source Software, June 2025. doi: 10.21105.joss.08113
 - Maxim Van de Wynckel and Beat Signer. OpenHPS: An Open Source Hybrid Positioning System. Technical Report WISE-2020-01, Vrije Universiteit Brussel, 2020. doi: 10.48550/ARXIV.2101.05198
 - Maxim Van de Wynckel and Beat Signer. Indoor Positioning Using the OpenHPS Framework. In Proceedings of the 11th International Conference on Indoor Positioning and Indoor Navigation (IPIN 2021), 2021. doi: 10.1109/IPIN51156.
 2021.9662569
